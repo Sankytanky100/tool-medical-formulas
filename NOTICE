@@ -5,3 +5,9 @@ you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
     http://www.apache.org/licenses/LICENSE-2.0
+
+---
+
+The 2021 CKD-EPI creatinine equation implemented in this snapshot follows Inker et al., 2021 (race-free). That paper is not vendored here.
+
+This snapshot does not include the production JSON formula catalog.
