@@ -14,11 +14,11 @@ jobs:
       - run: python -c "from tool_medical_formulas.engine.ckd_epi_creatinine import ckd_epi_2021_creatinine_egfr; v=ckd_epi_2021_creatinine_egfr(age_years=68, female=True, creatinine_mg_dl=1.8); print(v); assert v==30.3"
       - run: python -m pytest -q
       - run: |
-          if grep -R "cxa6iy7yla" --include='*.py' --include='*.md' --include='*.toml' --include='*.yaml' --exclude-dir=.git .; then
+          if grep -RE -- "-[a-z0-9]{10}-(uc|ue)\.a\.run\.app" --include='*.py' --include='*.md' --include='*.toml' --include='*.yaml' --exclude-dir=.git .; then
             echo "live Cloud Run hash leaked" >&2
             exit 1
           fi
-          if grep -R "medical-formulas-app" --include='*.py' --include='*.toml' --include='*.yaml' --exclude-dir=.git .; then
+          if grep -RE -- "medical-formulas-app" --include='*.py' --include='*.toml' --include='*.yaml' --exclude-dir=.git .; then
             echo "GCP project id leaked" >&2
             exit 1
           fi
