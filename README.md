@@ -4,7 +4,7 @@
 
 When a clinician asks for eGFR, MELD, or CHA₂DS₂-VASc, a language model can produce a plausible number without doing the arithmetic. That number can then be interpreted, charted, and acted on. This repository is the engine that makes the number come from code instead.
 
-Related contract (how the tool is declared to the platform): [laer-tool-contract](https://github.com/Sankytanky100/laer-tool-contract). Sibling tool (cited lab reference): [tool-labwise](https://github.com/Sankytanky100/tool-labwise).
+Related contract (how the tool is declared to the platform): [laer-tool-contract](https://github.com/Sankytanky100/laer-tool-contract) — HTTP envelope here; the same catalog also covers in-process PHI tools such as ambient scribe. Sibling tool (cited lab reference): [tool-labwise](https://github.com/Sankytanky100/tool-labwise).
 
 ---
 
