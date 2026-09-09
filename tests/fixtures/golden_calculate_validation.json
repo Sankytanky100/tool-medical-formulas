@@ -1,0 +1,9 @@
+{
+  "bundle_id": "medical_formulas",
+  "operation_id": "calculate_formula",
+  "inputs": {},
+  "expect": {
+    "status_keys": ["status"],
+    "allow_validation_failed": true
+  }
+}

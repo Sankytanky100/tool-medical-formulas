@@ -1,0 +1,12 @@
+flowchart TB
+  In[formula_id + inputs]
+  Val[Validate units]
+  Comp[Compile spec]
+  CKD{CKD-EPI?}
+  Det[Deterministic calculator]
+  Out[status + result]
+  In --> Val --> Comp --> CKD
+  CKD -->|yes| Ckd[2021 creatinine eGFR]
+  CKD -->|no| Det
+  Ckd --> Out
+  Det --> Out
